@@ -8,23 +8,24 @@
     <body>
         <section id="message">
         <h1>Envoie d'un message</h1>
-        <form action="/action_page.php" target="_blank" method="post">
+        <form action="rest.php" method="post">
             <label for="select-afficheur">Selectionner un afficheur:</label>
-            <select id="select-afficheur">name="Afficheur"
-                <option value="CP A">CP A</option>
-                <option value="CP B">CP B</option>
-                <option value="CE1 A">CE1 A</option>
-                <option value="CE1 B">CE1 B</option>
-                <option value="CE2 A">CE2 A</option>
-                <option value="CE2 B">CE2 B</option>
-                <option value="CM1 A">CM1 A</option>
-                <option value="CM1 B">CM1 B</option>
-                <option value="CM2 A">CM2 A</option>
-                <option value="CM2 B">CM2 B</option>
+            <select id="afficheur-select"name="ip_journal">
+                <option value="172.20.21.158">CP A</option>
+                <option value="172.20.21.231">CP B </option>
+                <option value="172.20.21.232"> CE1 A </option>
+                <option value="172.20.21.233">CE1 B</option>
+                <option value="172.20.21.234">CE2 A</option>
+                <option value="172.20.21.235">CE2 B</option>
+                <option value="172.20.21.236">CM1 A</option>
+                <option value="172.20.21.237">CM1 B</option>
+                <option value="172.20.21.238">CM2 A</option>
+                <option value="172.20.21.239">CM2 B</option>
             </select>
             <label for="message-envoye">Message a envoyer : </label>
-            <input type="text" id="message-envoye" name="message">
-            <input type="submit" value="Envoyer">
+            <input type="text" id="message-envoye" name="texte">
+            <input type="submit" value="Envoyer" name="submit_SW05">
+        </form>
         </section>
     </body>
 </html>
