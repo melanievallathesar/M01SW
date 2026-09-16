@@ -9,6 +9,7 @@
         <section id="message">
         <h1>Envoie d'un message</h1>
         <form action="rest.php" method="post">
+            
             <label for="select-afficheur">Selectionner un afficheur:</label>
             <select id="afficheur-select"name="ip_journal">
                 <option value="172.20.21.158">CP A</option>
@@ -22,8 +23,44 @@
                 <option value="172.20.21.238">CM2 A</option>
                 <option value="172.20.21.239">CM2 B</option>
             </select>
+
             <label for="message-envoye">Message a envoyer : </label>
             <input type="text" id="message-envoye" name="texte">
+
+            <label for="apparition-effet">Effet d'apparition:</label>
+            <select id="select-effetapparition"name="effetapparition">
+                <option value="FA">Immediate</option>
+                <option value="FB">Xopen</option>
+                <option value="FC">Curtain UP</option>
+                <option value="FD">Curtain Down</option>
+                <option value="FE">Scroll Left</option>
+                <option value="FF">Scroll Right</option>
+                <option value="FG">Scroll Left</option>
+                <option value="FH">Scroll Left</option>
+                <option value="FI">Scroll Left</option>
+                <option value="FJ">Scroll Left</option>
+                <option value="FK">Scroll Left</option>
+                <option value="FL">Scroll Left</option>
+                <option value="FM">Scroll Left</option>
+                <option value="FN">Scroll Left</option>
+                <option value="FO">Scroll Left</option>
+                <option value="FP">Scroll Left</option>
+                <option value="FE">Scroll Left</option>
+                <option value="FE">Scroll Left</option>
+            </select>
+
+            <label for="affichage-effet">Effet d'affichage:</label>
+            <select id="select-effetaffichage"name="effetaffichage">
+            </select>
+
+            <label for="affichage-duree">Duree d'affichage:</label>
+            <select id="select-dureeaffichage"name="dureeaffichage">
+            </select>
+
+            <label for="disparition-effet">Effet de disparition:</label>
+            <select id="select-effetdisparition"name=" effetdisparition">
+            </select>
+
             <input type="submit" value="Envoyer" name="submit_SW05">
         </form>
         </section>
