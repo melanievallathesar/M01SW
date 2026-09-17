@@ -48,7 +48,7 @@ nav div:hover{
 
 section{
     height: auto;
-    min-height: 400px;
+    min-height: calc(100% - 340px);
     width: 100%;
 }
 
